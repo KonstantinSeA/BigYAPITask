@@ -1,11 +1,4 @@
-from PyQt5.QtWidgets import QApplication, QWidget, QLabel
-from PyQt5.QtGui import QPixmap
-import sys
-import io
-from PyQt5 import uic
-
-
-template = '''<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>Form</class>
  <widget class="QWidget" name="Form">
@@ -37,18 +30,3 @@ template = '''<?xml version="1.0" encoding="UTF-8"?>
  <resources/>
  <connections/>
 </ui>
-'''
-
-
-class MapApi(QWidget):
-    def __init__(self):
-        super().__init__()
-        f = io.StringIO(template)
-        uic.loadUi(f, self)
-
-
-if __name__ == '__main__':
-    app = QApplication(sys.argv)
-    ex = MapApi()
-    ex.show()
-    sys.exit(app.exec())
