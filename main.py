@@ -40,6 +40,9 @@ template = '''<?xml version="1.0" encoding="UTF-8"?>
 '''
 
 
+SCALE = '0.02'
+
+
 class MapApi(QWidget):
     def __init__(self):
         super().__init__()
