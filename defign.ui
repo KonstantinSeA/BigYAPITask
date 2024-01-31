@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Большая задача по Maps API</string>
   </property>
   <widget class="QLabel" name="map_label">
    <property name="geometry">
@@ -19,7 +19,7 @@
      <x>30</x>
      <y>30</y>
      <width>511</width>
-     <height>441</height>
+     <height>431</height>
     </rect>
    </property>
    <property name="text">
